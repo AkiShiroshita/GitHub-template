@@ -34,7 +34,7 @@ usethis::use_github() # local to GitHub
 ### Push and Pull  
 First, don't forget "pull".  
 Do not commit large files (100mb).  
-Use "branch" and "pull request".  
+Use "pull request" rather than branching".  
 
 ```
 ```
