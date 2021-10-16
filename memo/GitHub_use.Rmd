@@ -14,6 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Set global setting.  
 
 GitHub -> R studio  
+
 ```
 library(usethis)
 usethis::use_git_config(user.name = "AkiShiroshita", user.email = "akihirokun8@gmail.com")
