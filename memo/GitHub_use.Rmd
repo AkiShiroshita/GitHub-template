@@ -1,0 +1,34 @@
+---
+title: "GitHub"
+author: "Akihiro Shiroshita"
+date: "2021/10/16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Hot to use GitHub  
+
+Set global setting.  
+
+```
+library(usethis)
+usethis::use_git_config(user.name = "AkiShiroshita", user.email = "akihirokun8@gmail.com")
+usethis::git_sitrep()
+usethis::git_vaccinate()
+usethis::create_github_token()
+gitcreds::gitcreds_set()  #paste your PAT here
+```
+
+## Command line  
+
+```
+git clone <repository address>
+git status
+git diff analysis.Rmd
+git add analysis.Rmd silly_script.R
+git commit -m "some changes"
+```
+
