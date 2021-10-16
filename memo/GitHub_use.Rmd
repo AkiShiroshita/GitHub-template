@@ -35,6 +35,7 @@ usethis::use_github() # local to GitHub
 First, don't forget "pull".  
 Do not commit large files (100mb).  
 Use "pull request" rather than branching".  
+linking to the "issue".  
 
 ```
 ```
