@@ -55,10 +55,12 @@ git log --oneline
 git reset <previous commit>
 ```
 
-3. Revert the commit
+3. Already pushed -> revert the commit   
 
 ```
-
+git diff e1e5720 d794860
+git revert d794860
+git diff HEAD~1 HEAD
 ```
 
 
