@@ -65,5 +65,6 @@ git branch
 git checkout new_graph # switch to a different branch
 git checkout -b custom_theme # create a new branch
 git push -u origin custom_theme #push this branch to the remote repository
+git merge custom_theme # merge <branch name> to merge the commits from my branch into the main branch
 ```
 
