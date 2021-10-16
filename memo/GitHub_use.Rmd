@@ -1,5 +1,5 @@
 ---
-title: "GitHub"
+title: "GitHub use"
 author: "Akihiro Shiroshita"
 date: "2021/10/16"
 output: html_document
@@ -9,9 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Hot to use GitHub  
+## Hot to use GitHub with R studio    
 
-Set global setting.  
+### Set global setting.  
 
 ```
 library(usethis)
@@ -19,8 +19,17 @@ usethis::use_git_config(user.name = "AkiShiroshita", user.email = "akihirokun8@g
 usethis::git_sitrep()
 usethis::git_vaccinate()
 usethis::create_github_token()
-gitcreds::gitcreds_set()  #paste your PAT here
+gitcreds::gitcreds_set()  # paste your PAT here
+usethis::git_remotes()
 ```
+### Push and Pull  
+First, don't forget "pull".  
+"main" is the only branch.
+
+```
+
+```
+
 
 ## Command line  
 
@@ -30,5 +39,11 @@ git status
 git diff analysis.Rmd
 git add analysis.Rmd silly_script.R
 git commit -m "some changes"
+git remote -v
+git branch # check branches
+git push <repository name> <branch name>
+git push origin main
+git push
+git pull
 ```
 
