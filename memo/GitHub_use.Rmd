@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Set global setting.  
 
+GitHub -> R studio  
 ```
 library(usethis)
 usethis::use_git_config(user.name = "AkiShiroshita", user.email = "akihirokun8@gmail.com")
@@ -22,12 +23,20 @@ usethis::create_github_token()
 gitcreds::gitcreds_set()  # paste your PAT here
 usethis::git_remotes()
 ```
-### Push and Pull  
-First, don't forget "pull".  
-"main" is the only branch.
+
+R studio -> GitHub  
 
 ```
+usethis::use_git() # initialize the Git repository
+usethis::use_github() # local to GitHub
+```
 
+### Push and Pull  
+First, don't forget "pull".  
+Do not commit large files (100mb).  
+Use branching.  
+
+```
 ```
 
 
@@ -45,5 +54,15 @@ git push <repository name> <branch name>
 git push origin main
 git push
 git pull
+git pull origin main
+git init # initialize the Git repository
+git add *
+git commit -m "initial commit"
+git remote add origin <address>
+git branch -M main
+git push -u origin main
+git branch
+git checkout new_graph # switch to a different branch
+git checkout -b custom_theme # create a new branch
 ```
 
