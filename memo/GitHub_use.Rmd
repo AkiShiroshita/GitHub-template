@@ -32,6 +32,16 @@ usethis::use_git() # initialize the Git repository
 usethis::use_github() # local to GitHub
 ```
 
+Git Large File Strage  
+
+```
+git lfs install
+git lfs track output/file.dat.gz # this will create a .gitattributes file
+git add input/file.dat.gz .gitattributes
+git commit -m "large file test"
+git push
+```
+
 ### Push and Pull  
 
 First, don't forget "pull".  
@@ -63,6 +73,13 @@ git revert d794860
 git diff HEAD~1 HEAD
 ```
 
+4. Remove large files  
+
+```
+git rm --cached input/file.dat.gz # remove the file
+git commit --amend -CHEAD # amend the previous commit to remove the file
+git reset HEAD~1 # alternative way: rest the branch back one
+```
 
 ## Command line  
 
